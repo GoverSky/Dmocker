@@ -18,5 +18,5 @@ def mock_data(request, pk, format=None):
     serializer = MockSerializer(get_object(pk))
     data= serializer.data
     return Response(json.loads(data['body']), status=data['status'], headers=json.loads(data['headers']),
-                    content_type=data['headers'])
+                    content_type=data['body_type'])
 
