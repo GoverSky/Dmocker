@@ -1,9 +1,5 @@
-from django.shortcuts import render
-
 # Create your views here.
 from rest_framework.response import Response
-from rest_framework import status, viewsets
-from rest_framework.views import APIView
 from rest_framework.decorators import api_view
 from .utils import content_type
 from .serializers import  MockSerializer
@@ -21,5 +17,6 @@ def mock_data(request, pk, format=None):
 
     serializer = MockSerializer(get_object(pk))
     data= serializer.data
-    return Response(data['body'], status=data['status'], headers=json.loads(data['headers']), content_type=content_type.json)
+    return Response(json.loads(data['body']), status=data['status'], headers=json.loads(data['headers']),
+                    content_type=data['headers'])
 

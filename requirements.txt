@@ -1,0 +1,5 @@
+django==2.2.7
+djangorestframework==3.10.3
+jsonpath_rw_ext==1.2.2
+Faker==2.0.4
+django-shortuuidfield==0.1.3

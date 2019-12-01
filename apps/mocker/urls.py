@@ -5,5 +5,5 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path("<uuid:pk>",views.mock_data),
+    path("<str:pk>", views.mock_data),
 ]

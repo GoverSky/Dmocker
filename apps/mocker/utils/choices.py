@@ -69,11 +69,11 @@ methods = (
     (4, "DEL"),
 )
 types = (
-    ("html","html"),
-    ("xml","xml"),
-    ("xml","xml"),
-    ("text","text"),
-    ("jpeg","jpeg"),
-    ("png","png"),
-    ("bin","bin"),
+    ("text/html", "html"),
+    ("application/xml", "xml"),
+    ("application/json", "json"),
+    ("text/html", "text"),
+    ("image/jpeg", "jpeg"),
+    ("image/png", "png"),
+    ("other", "other"),
 )

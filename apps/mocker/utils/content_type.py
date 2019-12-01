@@ -3,6 +3,8 @@
 # @File    : content_type.py
 # @Author  : 守望@天空~
 
+import mimetypes
+
 
 acx = "application/internet-property-stream"
 ai = "application/postscript"

@@ -19,5 +19,5 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mock/', include('mocker.urls')),
+    path('mock/', include('apps.mocker.urls')),
 ]

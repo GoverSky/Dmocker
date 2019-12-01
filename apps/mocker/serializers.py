@@ -6,13 +6,13 @@
 from rest_framework import serializers
 from .models import mocks
 from .utils import choices
-from .utils import content_type
+
 
 class MockSerializer(serializers.ModelSerializer):
     class Meta:
         model = mocks
         fields = '__all__'
-    id = serializers.UUIDField(format='hex')
+    id = serializers.CharField()
     status = serializers.ChoiceField(choices=choices.status)
     method=serializers.ChoiceField(choices=choices.methods)
     headers = serializers.JSONField()
