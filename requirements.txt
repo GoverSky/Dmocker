@@ -1,4 +1,4 @@
-django==3.0
+django==3.0.7
 djangorestframework==3.10.3
 jsonpath_rw_ext==1.2.2
 Faker==2.0.4
